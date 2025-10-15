@@ -2,7 +2,7 @@
 
 This project demonstrates common smart contract vulnerabilities, their exploits, and fixes using multiple security analysis tools.
 
-<!-- ## Project Structure
+## Project Structure
 
 ```
 ├── contracts/
@@ -12,7 +12,7 @@ This project demonstrates common smart contract vulnerabilities, their exploits,
 ├── test/                   # Test files including exploit tests
 ├── security/               # Security analysis configs
 └── scripts/                # Deployment and analysis scripts
-``` -->
+```
 
 ## Security Tools Used
 
