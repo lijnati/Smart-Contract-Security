@@ -1,0 +1,47 @@
+# Echidna configuration for smart contract fuzzing
+testMode: property
+testLimit: 10000
+timeout: 300
+shrinkLimit: 5000
+seqLen: 100
+contractAddr: "0x00a329c0648769a73afac7f9381e08fb43dbea72"
+deployer: "0x00a329c0648769a73afac7f9381e08fb43dbea70"
+sender: ["0x10000", "0x20000", "0x00a329c0648769A73afAc7F9381E08FB43dBEA70"]
+psender: "0x00a329c0648769a73afac7f9381e08fb43dbea70"
+prefix: "echidna_"
+cryticArgs: ["--solc-remaps", "forge-std/=lib/forge-std/src/,openzeppelin/=lib/openzeppelin-contracts/contracts/"]
+solcArgs: "--optimize"
+solcLibs: []
+quiet: false
+initialize: []
+multi-abi: false
+balanceAddr: 0xffffffff
+balanceContract: 0
+codeSize: 0x6000
+corpus-dir: "corpus"
+coverage: true
+estimateGas: true
+format: text
+seed: 0
+
+# Coverage options
+coverageFormats: ["txt", "html", "lcov"]
+
+# Gas estimation
+checkAsserts: true
+assertionMode: true
+
+# Corpus and mutation
+corpusDir: "corpus"
+mutConsts: []
+
+# Dictionary for fuzzing
+dictionary: "security/echidna-dictionary.txt"
+
+# Workers for parallel execution
+workers: 1
+
+# Specific test configuration
+filterBlacklist: true
+filterFunctions: []
+filterValues: []
